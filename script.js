@@ -24,11 +24,12 @@ const displayTimer=()=>{
     if(seconds==60){
         seconds = 0;
         minutes++;
-        if(minutes==60){
-            minutes = 0;
-            hour++;
-        }
     }
+    if(minutes==60){
+        minutes = 0;
+        hour++;
+    }
+    
     let h = hour < 10 ? "0" + hour : hour;
     let m = minutes < 10 ? "0" + minutes : minutes;
     let s = seconds < 10 ? "0" + seconds : seconds;
